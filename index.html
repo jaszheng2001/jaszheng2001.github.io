@@ -21,11 +21,15 @@
     <nav class="nav-bar">
       <h1 class="nav-logo"><a href="#" class="green-txt">&lt; J Z &gt;</a></h1>
       <ul class="nav-menu">
-        <li><a href="">About</a></li>
-        <li><a href="">Skills</a></li>
-        <li><a href="">Work</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a class="btn" href="">Resume</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a class="btn" href="attachments/resume122020.pdf" target="_blank"
+            >Resume</a
+          >
+        </li>
       </ul>
     </nav>
     <!--    Side Social Icons   -->
@@ -155,6 +159,23 @@
           is in the technology and financial industry. Feel free to leave a
           message below and I'll get back to you ASAP.
         </p>
+
+        <form name="contact" method="POST" data-netlify="true">
+          <div class="input">
+            <input type="text" placeholder="Name" name="name" nrequired />
+          </div>
+          <div class="input">
+            <input type="email" placeholder="Email" name="email" required />
+          </div>
+          <div class="input">
+            <textarea
+              placeholder="Enter your message"
+              name="message"
+              required
+            ></textarea>
+          </div>
+          <input type="submit" />
+        </form>
       </section>
 
       <!--    Footer  -->
