@@ -98,12 +98,6 @@ body {
   overflow-x: hidden;
 }
 
-.body-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 section {
   padding-bottom: 5rem;
   display: flex;
@@ -258,6 +252,10 @@ nav h1 {
   padding-right: 0;
 }
 
+.contact {
+  padding-bottom: 1rem;
+}
+
 .contact-desc {
   width: 50%;
   min-width: 450px;
@@ -371,9 +369,9 @@ footer {
     height: 0;
     overflow: hidden;
     width: 100%;
-    -webkit-transition: height 0.3s linear;
-    -moz-transition: height 0.3s linear;
-    transition: height 0.3s linear;
+    -webkit-transition: height 0.4s linear;
+    -moz-transition: height 0.4s linear;
+    transition: height 0.4s linear;
   }
 
   .mobile-nav-menu.expand {
