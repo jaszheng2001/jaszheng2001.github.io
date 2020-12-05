@@ -31,18 +31,62 @@
           >
         </li>
       </ul>
+      <div class="mobile hamburger-btn" onclick="toggleMenu()">
+        <i class="fal fa-bars"></i>
+      </div>
+
+      <!--  Mobile Navigation -->
+      <ul class="mobile-nav-menu mobile" onclick="toggleMenu()">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="attachments/resume122020.pdf" target="_blank">Resume</a>
+        </li>
+        <li class="social-li">
+          <div class="icon-wrapper-mobile">
+            <a href="https://www.github.com/jaszheng2001" target="_blank"
+              ><i class="fab fa-github icon"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/jasonzheng2001/"
+              target="_blank"
+              ><i class="fab fa-linkedin-in icon"></i
+            ></a>
+            <a href="https://www.facebook.com/jasonzheng1003" target="_blank"
+              ><i class="fab fa-facebook icon"></i
+            ></a>
+            <a href="https://www.instagram.com/jasonzheng1003" target="_blank"
+              ><i class="fab fa-instagram icon"></i
+            ></a>
+            <a href="https://twitter.com/jasonzheng1003/" target="_blank"
+              ><i class="fab fa-twitter icon"></i
+            ></a>
+          </div>
+        </li>
+      </ul>
     </nav>
+
     <!--    Side Social Icons   -->
-    <div class="icon-wrapper">
-      <a href="https://www.github.com/jaszheng2001" target="_blank"
-        ><i class="fab fa-github icon"></i
-      ></a>
-      <a href="https://www.linkedin.com/in/jasonzheng2001/" target="_blank"
-        ><i class="fab fa-linkedin-in icon"></i
-      ></a>
-      <a href="" target="_blank"><i class="fab fa-facebook icon"></i></a>
-      <a href="" target="_blank"><i class="fab fa-instagram icon"></i></a>
-      <a href="" target="_blank"><i class="fab fa-twitter icon"></i></a>
+    <div class="social-icons">
+      <div class="icon-wrapper">
+        <a href="https://www.github.com/jaszheng2001" target="_blank"
+          ><i class="fab fa-github icon"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/jasonzheng2001/" target="_blank"
+          ><i class="fab fa-linkedin-in icon"></i
+        ></a>
+        <a href="https://www.facebook.com/jasonzheng1003" target="_blank"
+          ><i class="fab fa-facebook icon"></i
+        ></a>
+        <a href="https://www.instagram.com/jasonzheng1003" target="_blank"
+          ><i class="fab fa-instagram icon"></i
+        ></a>
+        <a href="https://twitter.com/jasonzheng1003/" target="_blank"
+          ><i class="fab fa-twitter icon"></i
+        ></a>
+      </div>
     </div>
 
     <div class="body-container">
@@ -56,7 +100,7 @@
           become a software engineer. I am interested in new opportunities to
           grow in my career, as well as freelance opportunities.
         </p>
-        <a src="" class="green-txt btn main-btn">Get In Touch</a>
+        <a href="#contact" class="green-txt btn main-btn">Get In Touch</a>
       </section>
 
       <!--    About Me    -->
@@ -157,12 +201,18 @@
           I am currently looking for new opportunities to enhance my skills. I
           believe the industry where I would have the most potential for growth
           is in the technology and financial industry. Feel free to leave a
-          message below and I'll get back to you ASAP.
+          message below and I'll get back to you ASAP. I can also be reached at
+          jaszheng2001@gmail.com
         </p>
 
-        <form name="contact" method="POST" data-netlify="true">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          autocomplete="off"
+        >
           <div class="input">
-            <input type="text" placeholder="Name" name="name" nrequired />
+            <input type="text" placeholder="Name" name="name" required />
           </div>
           <div class="input">
             <input type="email" placeholder="Email" name="email" required />
@@ -183,5 +233,22 @@
         <p>&copy 2020 | Built by Jason Zheng</p>
       </footer>
     </div>
+
+    <script>
+      visible = false;
+      function toggleMenu() {
+        if (!visible) {
+          // document.getElementsByClassName('mobile-nav-menu')[0].style.cssText =
+          //   'display: flex; max-height: 100vh;';
+          document.querySelector('.mobile-nav-menu').classList.add('expand');
+          document.querySelector('body').classList.add('fixed-position');
+          visible = true;
+        } else {
+          document.querySelector('.mobile-nav-menu').classList.remove('expand');
+          document.querySelector('body').classList.remove('fixed-position');
+          visible = false;
+        }
+      }
+    </script>
   </body>
 </html>
