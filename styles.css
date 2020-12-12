@@ -7,13 +7,12 @@
 }
 
 html {
-  scroll-behavior: smooth !important;
+  scroll-behavior: smooth;
 }
 
 .body-pad {
   padding-left: 15%;
   padding-right: 15%;
-  max-width: 1600px;
 }
 
 .mobile {

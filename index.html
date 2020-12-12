@@ -103,7 +103,7 @@
     </section>
 
     <!--    About Me    -->
-    <section class="about body-pad" id="about">
+    <section class="about body-pad" id="about" name="about">
       <div class="hr">
         <hr />
         <h2>About Me</h2>
@@ -157,7 +157,7 @@
     </section>
 
     <!--    Work    -->
-    <section class="work body-pad" id="work">
+    <section class="work body-pad" id="work" name="work">
       <div class="hr medium-bottom-padding">
         <hr />
         <h2>Work</h2>
@@ -190,7 +190,7 @@
     </section>
 
     <!--    Contact     -->
-    <section class="contact body-pad" id="contact">
+    <section class="contact body-pad" id="contact" name="contact">
       <div class="hr medium-bottom-padding">
         <hr />
         <h2 class="">Get In Touch</h2>
@@ -231,8 +231,6 @@
       visible = false;
       function toggleMenu() {
         if (!visible) {
-          // document.getElementsByClassName('mobile-nav-menu')[0].style.cssText =
-          //   'display: flex; max-height: 100vh;';
           document.querySelector('.mobile-nav-menu').classList.add('expand');
           document.querySelector('body').classList.add('fixed-position');
           visible = true;
