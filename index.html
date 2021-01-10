@@ -26,7 +26,7 @@
         <li><a href="#work">Work</a></li>
         <li><a href="#contact">Contact</a></li>
         <li>
-          <a class="btn" href="attachments/resume122020.pdf" target="_blank"
+          <a class="btn" href="attachments/resume.pdf" target="_blank"
             >Resume</a
           >
         </li>
@@ -187,6 +187,28 @@
           </ul>
         </div>
       </div>
+
+      <div class="grid-2">
+        <div class="grid-item">
+          <a href="https://jz-task-app.herokuapp.com/" target="_blank"
+            ><img class="lg-img" src="img/taskapp.gif" alt="Task App Page"
+          /></a>
+        </div>
+        <div class="grid-item">
+          <h3>Task Tracker</h3>
+          <p class="work-desc">
+            A full stack application that allows you to keep track of your
+            tasks. Your tasks are stored on a database and the tasks syncs in
+            real time with the backend. Task can be filtered by completion and
+            sorted by creation date
+          </p>
+          <ul class="work-tech">
+            <li>node.js</li>
+            <li>mongodb</li>
+            <li>express</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!--    Contact     -->
@@ -209,7 +231,14 @@
           <input type="text" placeholder="Name" name="name" required />
         </div>
         <div class="input">
-          <input type="email" placeholder="Email" name="email" required />
+          <input
+            type="password"
+            placeholder="Email"
+            name="email"
+            id="email"
+            oninput="test()"
+            required
+          />
         </div>
         <div class="input">
           <textarea
