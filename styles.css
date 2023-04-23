@@ -237,6 +237,18 @@ nav h1 {
   padding-bottom: 20px;
 }
 
+.work .grid-item img {
+  max-height: 300px;
+}
+
+.experience h3 {
+  padding-bottom: 0px;
+}
+
+.experience p {
+  text-align: left;
+}
+
 .work-desc {
   background-color: #112646;
   padding: 20px;
