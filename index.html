@@ -90,15 +90,22 @@
 
     <!--    Body    -->
     <section class="main body-pad">
-      <p class="green-txt small-bottom-padding mono-font">Hi, my name is</p>
-      <h1 class="small-bottom-padding white-txt">Jason Zheng.</h1>
-      <h1 class="small-bottom-padding">I build applications.</h1>
-      <p class="medium-bottom-padding main-desc">
-        I'm a computer science student, based in New York, NY, studying to
-        become a software engineer. I am interested in new opportunities to grow
-        in my career, as well as freelance opportunities.
-      </p>
-      <a href="#contact" class="green-txt btn main-btn">Get In Touch</a>
+      <div class="grid-2" style="height: 100%">
+        <div class="main grid-item">
+          <p class="green-txt small-bottom-padding mono-font">Hi, my name is</p>
+          <h1 class="small-bottom-padding white-txt">Jason Zheng.</h1>
+          <h1 class="small-bottom-padding">I build applications.</h1>
+          <p class="medium-bottom-padding main-desc">
+            I'm a computer science student, based in New York, NY, studying to
+            become a software engineer. I am interested in new opportunities to
+            grow in my career, as well as freelance opportunities.
+          </p>
+          <a href="#contact" class="green-txt btn main-btn">Get In Touch</a>
+        </div>
+        <div class="main grid-item">
+          <img class="img" src="img/portrait.jpg" alt="Portrait" />
+        </div>
+      </div>
     </section>
 
     <!--    About Me    -->
@@ -120,9 +127,9 @@
           <br />
           <p>
             I'm currently working on expanding my knowledge in both web and
-            mobile development. My goal is to build products that will help
-            businesses grow and prosper. In the coming months, I want to learn
-            machine learning, which will improve most products I create.
+            mobile development. My goal is to build products that will help give
+            businesses a competitive edge over their competitors in their
+            operations.
           </p>
           <br />
           <p>
@@ -134,7 +141,7 @@
           </p>
         </div>
         <div class="grid-item">
-          <img class="img" src="img/portrait.jpg" alt="Portrait" />
+          <img class="img" src="img/slide1.jpeg" alt="Portrait" />
         </div>
       </div>
     </section>
@@ -165,7 +172,10 @@
       <div class="grid-2">
         <div class="grid-item">
           <a href="https://github.com/jaszheng2001/ChowTime" target="_blank"
-            ><img class="lg-img" src="img/chowtime.gif" alt="Chowtime"
+            ><img
+              class="lg-img zoom-on-hover"
+              src="img/chowtime.gif"
+              alt="Chowtime"
           /></a>
         </div>
         <div class="grid-item">
@@ -230,10 +240,34 @@
     </section>
 
     <!--    Experience    -->
-    <section class="work experience body-pad" id="work" name="work">
+    <section class="work experience body-pad" id="experience" name="experience">
       <div class="hr medium-bottom-padding">
         <hr />
         <h2>Experience</h2>
+      </div>
+      <div class="grid-2">
+        <div class="grid-item">
+          <h3>The Coder School</h3>
+          <h4 class="work-exp">Coaching Coach</h4>
+          <p class="work-desc">
+            Designed and implemented code cirriculum in Scratch and Python for
+            over 20 individuals. Conducted training sessions while maintaining a
+            fun and positive environment through fun and interactive projects.
+            Assessed student's progress through assessments and coding projects,
+            providing feedback and motivation to struggling students
+          </p>
+          <ul class="work-tech">
+            <li>Mar 2023 - Present</li>
+          </ul>
+        </div>
+        <div class="grid-item">
+          <img
+            class="lg-img"
+            src="img/tcs.png"
+            alt="TCS"
+            style="background-color: white"
+          />
+        </div>
       </div>
 
       <div class="grid-2">
@@ -280,6 +314,77 @@
             alt="NYCDOE"
             style="background-color: white"
           />
+        </div>
+      </div>
+    </section>
+
+    <!--    Technical Communication    -->
+    <section
+      class="work body-pad"
+      id="tech-comm"
+      name="Technical Communication"
+    >
+      <div class="hr medium-bottom-padding">
+        <hr />
+        <h2>Technical Communication</h2>
+      </div>
+
+      <div class="grid-2">
+        <div class="grid-item">
+          <a href="/attachments/cse300manual.pdf" target="_blank"
+            ><img
+              class="lg-img zoom-on-hover"
+              src="img/instruction.png"
+              alt="Web Server Instruction"
+          /></a>
+        </div>
+        <div class="grid-item">
+          <h3>Web Server Tutorial</h3>
+          <p class="work-desc">
+            Developed a well structured documentation on setting up an Apache
+            HTTP web server for beginners. Covered topics included Firewall and
+            verifying the HTTP server is up and runnning.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="grid-item">
+          <a href="/attachments/cse300pr.pdf" target="_blank"
+            ><img
+              class="lg-img zoom-on-hover"
+              src="img/pr.png"
+              alt="Stony Brook Press Release"
+          /></a>
+        </div>
+        <div class="grid-item">
+          <h3>SBU Parking Press Release</h3>
+          <p class="work-desc">
+            Composed a press release for the implementation of a new parking
+            system and structure at Stony Brook University. Created statistical
+            infographics to highlight the enhancments of the new incoming
+            system.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="grid-item">
+          <a href="/attachments/cse300pres.pdf" target="_blank"
+            ><img
+              class="lg-img"
+              src="img/presentation.png"
+              alt="Collaborative Problem Solving Presentation"
+          /></a>
+        </div>
+        <div class="grid-item">
+          <h3>Collaborative Problem Solving</h3>
+          <p class="work-desc">
+            Collaborated as a group of 5 to identify problems within Stony Brook
+            University's CS cirriculum. Through hours of research and data
+            collection through surveys, we presented a solution to class of 30+
+            students.
+          </p>
         </div>
       </div>
     </section>

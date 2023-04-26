@@ -114,6 +114,7 @@ nav {
   justify-content: space-between;
   padding: 1rem 5%;
   padding-top: 1.2rem;
+  z-index: 1000;
 }
 
 nav h1 {
@@ -174,21 +175,32 @@ nav h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 95vh;
+  min-height: 95vh;
+  text-align: left;
 }
 
 .main p {
   font-size: 1rem;
   line-height: 1.5rem;
+  width: 100%;
+}
+
+.main h1 {
+  width: 100%;
 }
 
 .main-desc {
+  align-self: flex-start;
   max-width: 50%;
   min-width: 450px;
 }
 
 .main .btn:hover {
   background-color: #112646;
+}
+
+.main .img {
+  border-radius: 50%;
 }
 
 .about {
@@ -199,10 +211,6 @@ nav h1 {
 
 .about .grid-2 {
   padding-top: 20px;
-}
-
-.about .img {
-  border-radius: 50%;
 }
 
 .about h2 {
@@ -262,6 +270,14 @@ nav h1 {
   display: inline-block;
   font-family: 'Roboto Mono', monospace;
   padding: 10px;
+}
+
+.zoom-on-hover {
+  transition: transform 0.2s;
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.5);
 }
 
 .work-tech li:last-child {
@@ -361,6 +377,10 @@ footer {
 
   .mobile {
     display: flex;
+  }
+
+  .main {
+    min-height: 0;
   }
 
   nav {
